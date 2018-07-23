@@ -95,7 +95,7 @@ php artisan storage:link
 php artisan vendor:publish --all
 ```
 
-最后一步最重要 -> 安装 Plus 程序：
+最后一步非常重要 -> 安装 Plus 程序：
 
 访问 `http://www.*.com/installer` 进行安装
 
