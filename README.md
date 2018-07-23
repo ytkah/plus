@@ -71,6 +71,8 @@ cd plus
 
 > 如果无法安装，请查看是否禁用了php的相关函数exec，system，syformlink等，详情参考[thinksns-plus安装出现RuntimeException Symlink from * to * failed错误](https://www.cnblogs.com/ytkah/p/9354824.html)
 
+设置文件夹权限为777：/storage/和/bootstrap/cache/
+
 > 现在，打开你的 `.env` 文件配置数据库等各类信息，然后执行后面的步骤！
 
 
@@ -93,13 +95,11 @@ php artisan storage:link
 php artisan vendor:publish --all
 ```
 
-运行 Plus 程序：
+最后一步最重要 -> 安装 Plus 程序：
 
-```shell
-php artisan serve
-```
+访问 `http://www.*.com/installer` 进行安装
 
-现在你可以访问 `http://127.0.0.1:8000` 查看你安装的 Plus 程序了，但是上述只是一份简单的安装，更加详细或者可以运行在
+更加详细或者可以运行在
 正式环境的安装指南请参阅 👉 [安装指南](https://slimkit.github.io/docs/server-getting-started-installation.html)
 
 ## 交流 & 支持
