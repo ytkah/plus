@@ -71,7 +71,7 @@ cd plus
 
 > 如果无法安装，请查看是否禁用了php的相关函数exec，system，syformlink等，详情参考[thinksns-plus安装出现RuntimeException Symlink from * to * failed错误](https://www.cnblogs.com/ytkah/p/9354824.html)
 
-设置文件夹权限为777：/storage/和/bootstrap/cache/
+设置文件夹权限为777：/storage/和/bootstrap/cache/还有/.plus.yml
 
 > 现在，打开你的 `.env` 文件配置数据库等各类信息，然后执行后面的步骤！
 
