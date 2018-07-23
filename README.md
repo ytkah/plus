@@ -1,12 +1,12 @@
 <p align="center">
-	<a href="http://www.thinksns.com" rel="noopener" target="_blank"><img src="https://github.com/slimkit/plus/raw/master/public/plus.png" alt="Plus (ThinkSNS+) Logo"></a>
+	<img src="https://github.com/slimkit/plus/raw/master/public/plus.png" alt="Plus (ThinkSNS+) Logo">
 </p>
 
 <h1 align="center">Plus (ThinkSNS+)</h1>
 
 <div align="center">
 
-[Plus (ThinkSNS+)](http://www.thinksns.com) 是使用 [Laravel](https://laravel.com/) 框架开发；一个功能强大、易于开发和动态拓展的社交系统。
+Plus (ThinkSNS+) 是使用 [Laravel](https://laravel.com/) 框架开发；一个功能强大、易于开发和动态拓展的社交系统。
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8320deaa80b8489f95fcedaae6df079d)](https://www.codacy.com/app/slimkit/plus?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=slimkit/plus&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/8320deaa80b8489f95fcedaae6df079d)](https://www.codacy.com/app/slimkit/plus?utm_source=github.com&utm_medium=referral&utm_content=slimkit/plus&utm_campaign=Badge_Coverage)
@@ -69,7 +69,16 @@ composer create-project slimkit/plus
 cd plus
 ```
 
+> 如果无法安装，请查看是否禁用了php的相关函数exec，system，syformlink等，详情参考[thinksns-plus安装出现RuntimeException Symlink from * to * failed错误](https://www.cnblogs.com/ytkah/p/9354824.html)
+
 > 现在，打开你的 `.env` 文件配置数据库等各类信息，然后执行后面的步骤！
+
+
+生成key：
+
+```shell
+php artisan key:generate
+```
 
 生成数据表以及默认填充数据：
 
